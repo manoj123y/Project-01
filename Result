@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>subject</th>
+                <th>theory </th>
+                <th>practical </th>
+                <th> mark</th>
+                <th>grade</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>english</td>
+                <td>45</td>
+                <td>23</td>
+                <td>68</td>
+                <td>C</td>
+                <th rowspan="6">PASS</th>
+            </tr>
+            <tr>
+                <td>hindi</td>
+                <td>60</td>
+                <td>24</td>
+                <td>84</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>mathematic</td>
+                <td>65</td>
+                <td>24</td>
+                <td>89</td>
+                <td>A</td>
+            <tr>
+                <td> science</td>
+                <td>62</td>
+                <td>24</td>
+                <td>86</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td> social science</td>
+                <td>52</td>
+                <td>24</td>
+                <td>76</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>computer</td>
+                <td>45</td>
+                <td>26</td>
+                <td>71</td>
+                <td>B</td>
+            </tr>
+            <tr>
+               <th colspan="6">Total marks : 484</th>
+            </tr>
+        </tbody>
+        <!-- if you do not want use coln span than use footer method -->
+                <!-- <tfoot>
+            <th colspan="3"> total mark</th>
+            <th>345</th>
+        </tfoot> -->
+    </table>
+
+</body>
+
+</html>
