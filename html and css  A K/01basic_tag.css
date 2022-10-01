@@ -1,0 +1,51 @@
+h1 {
+    color: brown;
+
+}
+
+h2 {
+    background-color: yellow;
+
+}
+
+body {
+    background-color: wheat;
+}
+
+p {
+    color: rgb(163, 145, 145);
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* class slector */
+.special {
+    color: blueviolet;
+}
+
+body h1+p .sp {
+    color: blue;
+    background-color: aqua;
+    padding: 7px;
+}
+
+/* id selector */
+h3#mn {
+    color: blueviolet;
+    background-color: black;
+    padding: 5px;
+}
+
+/* attribut selector */
+li[class] {
+    color: black;
+    font-size: 36px;
+    background-color: red;   
+}
+li[class="b"]{
+    color: aliceblue;
+
+
+}

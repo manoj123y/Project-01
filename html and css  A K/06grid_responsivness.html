@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            
+            display: grid;
+            /* grid-auto-rows: minmax(100px,auto); */
+            row-gap: 9px;
+            column-gap: 9px;
+     
+            /* auto-fill=jitna time repeat krva hai likho
+ ya auto fil kr di isse apne hisab se manage
+  kr lega yani resposines bd jayega  minmax -- dibbe ki min colum 
+  lengtha and auto text ke hisav se manage ho jayega */
+            grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+
+            
+
+
+
+
+
+
+        }
+
+        .item {
+            background-color: aqua;
+            border: 3px solid blanchedalmond;
+            border-radius: 5px;
+            /* text-align: center; */
+            /* width: 100px; */
+            height: 102px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">dabba 1 </div>
+        <div class="item">dabba 2</div>
+        <div class="item">dabba 3</div>
+        <div class="item">dabba 4</div>
+        <div class="item">dabba 5</div>
+
+    </div>
+
+</body>
+
+</html>

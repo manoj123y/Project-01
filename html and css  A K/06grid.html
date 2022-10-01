@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            height: 343px;
+            border: 1px solid;
+            width: 385px;
+            /* this is for all which is below  */
+            display: grid;
+            /* grid-template-columns: 100px 100px  100px; */
+            /* grid-template-columns: 1fr 2fr 3fr; */
+            /* auto-fill=jitna time repeat krva hai likho
+ ya auto fil kr di isse apne hisab se manage
+  kr lega yani resposines bd jayega  yha 3fr  */
+            /* grid-template-columns: repeat(3,1fr); */
+
+            /* it work like as padding  */
+            /* grid-gap: 20px; */
+            /* ye fix kr deta hai row ki size ko jb 
+            colum ayega to vo colum ko fix kr dega
+             grid-auto-rows: 100px;  other wise text kitna
+              bhi likhi dibba
+             apne se small and big ho jatahai */
+            /* grid-auto-rows: 100px; */
+            /* yha min 100px and max auto hoga  */
+            /* grid-auto-rows: minmax(100px,auto); */
+            /* grid-template-rows: 100px  60px 150px; */
+
+
+            /* auto-fill=jitna time repeat krva hai likho
+ ya auto fil kr di isse apne hisab se manage
+  kr lega yani resposines bd jayega  minmax -- dibbe ki min colum 
+  lengtha and auto text ke hisav se manage ho jayega */
+            grid-template-columns: repeat(5, minmax(50px, auto));
+            /* row-gap: 3px; */
+            /* column-gap: 9px; */
+            /* grid-auto-rows: minmax(100px,auto); */
+            /* grid-auto-columns: minmax(50px,auto); */
+
+
+
+
+
+
+
+        }
+
+        .item {
+            background-color: aqua;
+            border: 3px solid rgb(166, 159, 149);
+            border-radius: 5px;
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">dabba 1  </div>
+        <div class="item">dabba 2</div>
+        <div class="item">dabba 3</div>
+        <div class="item">dabba 4</div>
+        <div class="item">dabba 5</div>
+
+    </div>
+
+</body>
+
+</html>

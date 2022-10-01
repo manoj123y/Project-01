@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body {
+            width: 1400px;
+            background-color: aqua;
+        }
+
+        .container {
+            width: 1400px;
+            /* text-align: center; */
+            /* height: 123px; */
+            border: 1px solid blueviolet;
+            border-radius: 7px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 1390px;
+            padding: 7px;
+            margin: 5px;
+            border: 1px solid rebeccapurple;
+            border-radius: 7px;
+
+        }
+
+        fieldset {
+            background-color: white;
+            border: 1px solid rebeccapurple;
+            border-radius: 7px;
+            width: 1387px;
+            padding: 9px;
+            margin: 4px;
+
+
+        }
+
+        h1 {
+            /* width: 1400px; */
+            background-color: aliceblue;
+            text-align: center;
+            padding: 9px;
+            margin: 18px;
+            border: 3px solid black;
+            border-radius: 6px;
+
+
+        }
+
+        h2 {
+            background-color: darkmagenta;
+            width: 240px;
+            padding: 9px;
+            margin: 4px;
+            border-radius: 7px;
+
+        }
+
+        input[type="submit"] {
+            width: 1400px;
+            margin: 4px;
+            padding: 9px;
+            color: black;
+            border: 2px solid black;
+            border-radius: 7px;
+            background-color: brown;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            color: aqua;
+            background-color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="container">
+            <h1>This is payment form making by Mr. Manoj only for practice purpose.</h1>
+            <h2>Contact Information :</h2>
+            <p>first name:<input type="text" placeholder="enter your first name"></p>
+            <p>last name: <input type="text" placeholder="enter your last name"></p>
+            <fieldset>
+                <legend>gender:*</legend>
+                <p>male: <input type="radio" name="gender" id="">
+                    female: <input type="radio" name="gender" id="" required></p>
+            </fieldset>
+            <p>Email:*<input type="email" name="" id="" placeholder="xyz@gmail.com" required></p>
+            <p>mobile-No: <input type="number" name="" id=""></p>
+            <p>Address: <textarea name="address" id="" cols="30" rows="10"
+                    placeholder="enter your address with pincode"></textarea></p>
+            <p>Pincode:* <input type="number" name="" id="" placeholder="123456" required></p>
+            <h2>Payment Information:</h2>
+            <p>card type:*<select name="card type" id="">
+                    <option value="select card type">select card type</option>
+                    <option value="visa">visa</option>
+                    <option value="rupay">rupay</option>
+                    <option value="master card">master card</option> required
+                </select></p>
+            <p>card no:* <input type="number" name="" id="" required></p>
+            <p> cvv:*<input type="password" name="" id="" required></p>
+            <input type="submit" value="Pay Now" name="" id="">
+        </div>
+    </form>
+
+</body>
+
+</html>

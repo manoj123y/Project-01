@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            background-color: aqua;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: large;
+            font-weight: 300;
+            margin-top: 140px;
+            margin-left: 50px;
+            padding-left: 5px;
+            border: 4px solid;
+            border-radius: 28px;
+            position: relative;
+            animation: Bouncing .9s ease 1s infinite alternate both;
+        }
+
+        .b {
+            background-color: rgb(83, 176, 131);
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: large;
+            font-weight: 300;
+            margin-left: 150px;
+            padding: 5px;
+            border: 4px solid;
+            border-radius: 28px;
+            position: relative;
+            animation: bouncing .9s ease 1s infinite alternate both;
+        }
+
+        @keyframes Bouncing {
+            0% {
+                top: 0;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            }
+
+            100% {
+                top: 190px;
+                box-shadow: 0 50px 50px rgb(6, 15, 15);
+            }
+        }
+        @keyframes bouncing {
+            0% {
+                bottom: 0px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            }
+
+            100% {
+                bottom: 180px;
+                box-shadow: 0 50px 50px rgb(6, 15, 15);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">a</div>
+    <br><br><b>
+        <br><br>
+    </b>
+    <div class="b">b</div>
+
+</body>
+
+</html>

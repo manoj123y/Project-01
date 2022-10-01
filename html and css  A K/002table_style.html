@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table_style</title>
+    <style>
+        table {
+            border: 3px solid blue;
+            /* border-collapse: collapse; */
+            /* padding: 19px; */
+            /* border-spacing: 30px; */
+            /* background-color: brown; */
+        }
+
+        td {
+            /* background-color: brown; */
+            border: 3px solid blue;
+            /* border-collapse: collapse; */
+            padding: 19px;
+            /* border-spacing: 30px; */
+
+        }
+
+        tr {
+            /* background-color: brown; */
+            /* border: 3px solid red; */
+            /* border-collapse: collapse; */
+            /* padding: 19px; */
+            /* border-spacing: 30px; */
+        }
+
+        th {
+            background-color: brown;
+            /* border: 3px solid blue;
+            border-collapse: collapse;
+            padding: 19px;
+            border-spacing: 30px; */
+        }
+
+        thead {
+            background-color: brown;
+            /* border: 3px solid rgb(255, 0, 0);
+            border-collapse: collapse;
+            padding: 19px;
+            border-spacing: 30px; */
+
+        }
+
+        tbody {
+            background-color: yellow;
+            /* border: 3px solid blue; */
+            /* border-collapse: collapse; */
+            /* padding: 19px; */
+            /* border-spacing: 30px; */
+        }
+
+        footer {
+            background-color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>subject</td>
+                <td>thoery</td>
+                <td>practical</td>
+                <td>mark</td>
+                <td>status</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>physic</td>
+                <td>60</td>
+                <td>24</td>
+                <td>84</td>
+                <td rowspan="5"> PASS</td>
+            </tr>
+            <tr>
+                <td>english</td>
+                <td>60</td>
+                <td>-</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>hindi</td>
+                <td>60</td>
+                <td>-</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>60</td>
+                <td>-</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>chemisty</td>
+                <td>60</td>
+                <td>27</td>
+                <td>87</td>
+            </tr>
+
+        </tbody>
+        <footer>
+            <th>
+            <td colspan="5">total: 351</td>
+
+            </th>
+        </footer>
+    </table>
+
+</body>
+
+</html>
